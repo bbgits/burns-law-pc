@@ -7,7 +7,7 @@ import { slug } from "github-slugger";
 import Image from "next/image";
 
 export async function generateStaticParams() {
-  return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
+    return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
 }
 
 export async function generateMetadata({ params }) {

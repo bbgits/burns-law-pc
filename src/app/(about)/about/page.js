@@ -13,14 +13,14 @@ export const metadata = {
     return (
       <>
         <AboutCoverSection />
-        <Skills />
+        {/* <Skills />
         <h2 className='font-bold text-3xl xs:text-4xl sxl:text-5xl  text-center lg:text-left mt-4 text-dark dark:text-light'>
             portfolio
             </h2>
       
       
         <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
-        <span className="font-extrabold">Turbo Tabs</span> - Customized daily reports sent to your email each morning as neatly formatted pdf.  I wrote all modules for working prototype which included a Flutter frontend, Firebase database, JavaScript and Python backend all deployed in modern and scalable Firebase architecture. Find out more  <Link href="www.turbotabs.com"  className="!underline underline-offset-2"   >here</Link> and let's make it happen.
+        <span className="font-extrabold">Burns Law P.C.</span>
         </h2>
       
        
@@ -29,16 +29,16 @@ export const metadata = {
       
        
         <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
-        <span className="font-extrabold"> <Link href="mydailypdf.com"  className="!underline underline-offset-2"   >MyDailyPdf.com</Link></span> - Previous version of TurboTabs built using React JS and <Link href="mydailypdf.com" className="!underline underline-offset-2">deployed to AWS.</Link> and easy to use website. Source code available on <Link href="https://github.com/bbgits/blog"  className="!underline underline-offset-2"   > Github </Link></h2>
+        <span className="font-extrabold"> <Link href="mydailypdf.com"  className="!underline underline-offset-2"   >MyDailyPdf.com</Link></span> - Previous version of TurboTabs built using React JS and <Link href="mydailypdf.com" className="!underline underline-offset-2">deployed to AWS.</Link> and easy to use website. Source code available on <Link href="https://github.com/bbgits/blog"  className="!underline underline-offset-2"   > Github </Link></h2> */}
        
        
        
        
        
-        <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
-        <span className="font-extrabold">Smarty Tabs</span> - This micro publishing e-commerce website focuses on study aids for lawyers and other advanced degrees.  Find out more  <Link href="www.turbotabs.com"  className="!underline underline-offset-2"   >here</Link> and let's make it happen.</h2>
+        {/* <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
+        <span className="font-extrabold">Smarty Tabs</span> - This micro publishing e-commerce website focuses on study aids for lawyers and other advanced degrees.  Find out more  <Link href="www.turbotabs.com"  className="!underline underline-offset-2"   >here</Link> and let's make it happen.</h2> */}
       
-        <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
+        {/* <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
         <span className="font-extrabold">Zip2LatLon</span> - An open source Python utility that converts postal zip codes to latitude and longitude coordinates.   Find out more  <Link href="www.turbotabs.com"  className="!underline underline-offset-2"   >here</Link> and let's make it happen.</h2>
 
         <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
@@ -53,7 +53,7 @@ export const metadata = {
       
         <h2 className="mt-2 font-semibold text-lg md:text-2xl self-center text-center mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal"> 
         let's get started: brian@brianburns.com
-        </h2>
+        </h2> */}
       </>
     );
   }

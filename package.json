@@ -41,5 +41,9 @@
   "devDependencies": {
     "encoding": "^0.1.13",
     "sharp": "^0.32.6"
-  }
+  },
+  "resolutions": {
+  "**/@typescript-eslint/eslint-plugin": "^4.1.1",
+  "**/@typescript-eslint/parser": "^4.1.1"
+}
 }

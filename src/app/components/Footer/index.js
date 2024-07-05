@@ -2,24 +2,49 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { db } from '@/firebaseConfig';
-import { addDoc, setDoc, doc, collection, serverTimestamp } from 'firebase/firestore';
+import {initializeApp} from 'firebase/app';
+import { getFirestore, collection, doc, serverTimestamp, addDoc, setDoc } from 'firebase/firestore';
+import {app, appCheck} from 'firebaseConfig';
+import { initializeAppCheck, ReCaptchaV3Provider } from 'firebase/app-check';
+// const firebaseConfig = {
+
+// };
+import FirebaseAppCheckProvider from '../FirebaseAppCheckProvider';
+import { FirebaseAppProvider } from 'reactfire'
+
+
+// Use the initialized Firestore instance to access a collection
+ // Replace 'emails' with the actual 
 
 const Footer = () => {
+  
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const [submitted, setSubmitted] = useState(false); // State to track form submission
+  const [submitted, setSubmitted] = useState(false); 
+  const database = getFirestore(app);
+  const collectionRef = collection(database, 'emails');
+  const appCheck = initializeAppCheck(app, {
+    provider: new ReCaptchaV3Provider('6Ld-2ggqAAAAAKGaPa6XCbHRliXRjtwpj6ghYnD-'),
+    isTokenAutoRefreshEnabled: true
+  });
 
   const onSubmit = async (data) => {
+    console.log("submitting...")
+    const database = getFirestore(app);
+    console.log("database fetched...")
     const timestamp = new Date().getTime(); // Generate a timestamp
     const documentName = `${data['Email']}_${timestamp}`; // Custom document name
-    await setDoc(doc(db, 'emails', documentName), { email: data['Email'], timestamp: serverTimestamp() }, documentName);
+    
+    await setDoc(doc(database, 'emails', documentName), { email: data['Email'], timestamp: serverTimestamp()});
     setSubmitted(true); // Set submitted state to true after successful form submission
   };
 
+
   return (
+
     <footer className="mt-12 lg:mt-16 rounded-2xl bg-dark dark:bg-bbDark flex flex-col items-center text-light">
       {/* Existing content */}
       {submitted ? ( // Conditionally render based on form submission
@@ -45,7 +70,9 @@ const Footer = () => {
         </form>
       )}
       {/* Remaining content */}
+      
     </footer>
+
   );
 };
 

@@ -1,3 +1,4 @@
+
 import {cx} from '../utils'
 import './globals.css'
 import { Inter, Manrope } from 'next/font/google'
@@ -5,6 +6,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import siteMetadata from '../utils/siteMetaData'
 import Script from 'next/script'
+import FirebaseAppCheckProvider from './components/FirebaseAppCheckProvider'
+import { FirebaseAppProvider } from 'reactfire'
 
 
 const inter = Inter({
@@ -57,6 +60,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <FirebaseAppProvider>
+      <FirebaseAppCheckProvider>
       <body
         className={cx(
           inter.variable,
@@ -75,6 +80,8 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      </FirebaseAppCheckProvider>
+      </FirebaseAppProvider>
     </html>
   );
 }

@@ -5,7 +5,7 @@ import { format } from 'date-fns'
 
 const BlogLayoutTwo = ({blog}) => {
   return (
-    <div class="group grid grid-cols-12 gap-4 items-center text-dark">
+    <div className="group grid grid-cols-12 gap-4 items-center text-dark">
         <Link href={blog.url} className="col-span-4 h-full rounded-xl overflow-hidden">
             <Image src={blog.image.filePath.replace("../public","")}
                 placeholder='blur'

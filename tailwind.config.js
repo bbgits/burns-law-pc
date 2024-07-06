@@ -17,8 +17,8 @@ module.exports = {
         bbPinkGrad3:"ff4c42",
         bbPinkGrad4:"ff5e13",
         light: "#fff",
-        accent: "#fa433c",
-        accentDark: "#c93630",
+        accent: "#000000",
+        accentDark: "#A9A9A9",
         gray: "#747474",
       },
       fontFamily:{

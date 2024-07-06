@@ -15,7 +15,7 @@ const AboutCoverSection = () => {
 
         <div className='w-full md:w-1/2 flex flex-col text-left items-start justify-center px-5 xs:p-10 pb-10 lg:px-16'>
             <h2 className='font-bold capitalize text-4xl text-center lg:text-left mt-4'>
-            Let&apos;s Connect!
+            About Burns Law
             </h2>
             <p className='font-medium  mt-4 text-sm lg:text-base text-justify'>
             As a seasoned professional at the intersection of law, technology, and politics, I have cultivated a diverse and impactful career spanning various domains. 

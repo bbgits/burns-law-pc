@@ -1,28 +1,18 @@
 const SkillList = [
-    "next.js",
-    "tailwind css",
-    "figma",
-    "javaScript",
-    "react JS",
-    "web design",
-    "python",
-    "stripe api",
-    "flutter",
-    "firebase",
-    "AWS",
-    "generative AI",
-    "wireframing",
-    "SEO",
-    "startup operations",
-    "content marketing",
-  ];
+    "divorce",
+    "pre-nuptial agreements",
+    "post-nuptial agreements",
+    "orders of protection",
+    "parenting time",
+    "high net worth divorce",
+      ];
   
   const Skills = () => {
     return (
       <section className="w-full flex flex-col p-5 xs:p-10 sm:p-12 md:p-16 lg:p-20 border-b-2 border-solid border-dark dark:border-light
        text-dark dark:text-light">
         <span className="font-semibold text-lg sm:text-3xl md:text-4xl text-accent dark:text-accentDark">
-          I&apos;m comfortable in...
+          Practice Areas:
         </span>
         <ul className="flex flex-wrap mt-8 justify-center  xs:justify-start">
           {SkillList.map((item, index) => {

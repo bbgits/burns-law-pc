@@ -18,7 +18,7 @@ const AboutCoverSection = () => {
             About Brian Burns
             </h2>
             <p className='font-medium  mt-4 text-sm lg:text-base text-justify'>
-            After graduating cum laude from the University of Memphis law school in 2016, I worked in-house at the Federal Election Commission and a consulting firm in D.C. before moving back home to Chicago to work at a financial technology startup.  For the past several years, I have focused my legal career exclussively on Family Law.
+            After graduating cum laude from the University of Memphis Cecil C. Humphries School of Law in 2016, I passed the Illinois bar and started worked in-house at the Federal Election Commission and then at a consulting firm in D.C. before moving back home to Chicago to work at a financial technology startup.  For the past several years, I have focused my legal career exclussively on Family Law.
 
             </p>
             <p className='font-medium  mt-4 text-sm lg:text-base text-justify'>

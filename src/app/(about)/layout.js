@@ -2,13 +2,13 @@ import InsightRoll from "../components/About/InsightRoll";
 
 
 const insights = [
-    "16+ Projects Completed",
-    "5+ Years of Freelancing",
-    "99% Client Satisfaction",
-    "Full Stack Developer",
-    "Licensed Attorney",
-    "Multi-Platform Marketing",
-    "Scientific Approach",
+    "Licensed Since 2016",
+    "Family Law Focus",
+    "Modern Legal Practice",
+    "Affordable Pricing",
+    "Clear Communication",
+    "Vigorous Advocacy",
+    "Honest Advice",
   ];
 
 export default function AboutLayout({ children }) {

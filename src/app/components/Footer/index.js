@@ -43,11 +43,15 @@ const Footer = () => {
       {/* Existing content */}
       {/* {submitted ? ( // Conditionally render based on form submission */}
         <p className="mt-6 mb-2 lg:mt-16 font-medium text-center text-2xl">
-          Got a legal problem? Send me an email:
+          Have a legal problem? Send me an email:
         </p>
         <p className="mb-6 font-medium text-center text-xl sm:text-2xl lg:text-4xl px-4">
           Brian@BurnsLawPC.com
         </p>
+        <p className="mt-2 mb-2 lg:mt-2 font-medium text-center text-xl">
+          DISCLAIMERS: NO LAWYER-CLIENT RELATIONSHIP IS CREATED BY SENDING ME AN EMAIL. <br></br> I AM NOT YOUR LAWYER UNLESS YOU HAVE SIGNED A RETAINER AGREEMENT. <br></br> BRIAN BURNS IS LICENSED TO PRACTICE LAW IN ILLINOIS AND MAINTAINS REQUIRED INSURANCE. <br></br>ALL LEGAL SERVICES PROVIDED INDIVIDUALLY BY BRIAN BURNS (AND NOT BY BURNS LAW P.C.) UNLESS OTHERWISE AGREED.
+        </p>
+
       {/* ) : (
         <form
           onSubmit={handleSubmit(onSubmit)}

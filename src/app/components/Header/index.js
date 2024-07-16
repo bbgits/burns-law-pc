@@ -128,8 +128,8 @@ const toggle = () =>{
 {/* social icons, visible only md screen (768px) and above */}
         <div className=" hidden md:flex items-center">
             <a href={siteMetadata.linkedin} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via LinkedIn" target="_blank"><LinkedinIcon className="fill-accent hover:scale-125 transition-all ease duration-200 dark:fill-light dark:stroke-black dark:bg-clip-content" /></a>
-            <a href={siteMetadata.twitter} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via Twitter" target="_blank"><TwitterIcon className="fill-accent hover:scale-125 transition-all ease duration-200 dark:fill-light" /></a>
-            <a href={siteMetadata.github} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Check my profile on Github" target="_blank"><GithubIcon className="fill-accent hover:scale-125 transition-all ease duration-200 dark:fill-light" /></a>
+            {/* <a href={siteMetadata.twitter} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via Twitter" target="_blank"><TwitterIcon className="fill-accent hover:scale-125 transition-all ease duration-200 dark:fill-light" /></a> */}
+            {/* <a href={siteMetadata.github} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Check my profile on Github" target="_blank"><GithubIcon className="fill-accent hover:scale-125 transition-all ease duration-200 dark:fill-light" /></a> */}
         </div>
     </header>
   )

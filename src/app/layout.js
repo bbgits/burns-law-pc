@@ -5,6 +5,10 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import siteMetadata from '../utils/siteMetaData'
 import Script from 'next/script'
+import ReactGA from "react-ga4"
+
+ReactGA.initialize("G-SDZLZ08D6Z")
+ReactGA.send({ hitType: "pageview", page: "/", title: "Any Page View" });
 
 
 
@@ -59,6 +63,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SDZLZ08D6Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SDZLZ08D6Z');
+</script>
       <body
         className={cx(
           inter.variable,
@@ -73,6 +85,7 @@ export default function RootLayout({ children }) {
     document.documentElement.classList.remove('dark')
   }`}
         </Script>
+        
         <Header />
         {children}
         <Footer />

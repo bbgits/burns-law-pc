@@ -6,9 +6,11 @@ import Footer from './components/Footer'
 import siteMetadata from '../utils/siteMetaData'
 import Script from 'next/script'
 import ReactGA from "react-ga4"
+import Head from 'next/head';
 
-ReactGA.initialize("G-SDZLZ08D6Z")
+ReactGA.initialize("G-SDZLZ08D6Z");
 ReactGA.send({ hitType: "pageview", page: "/", title: "Any Page View" });
+
 
 
 
@@ -59,18 +61,32 @@ export const metadata = {
   },
 };
 
+const CustomHead = () => (
+  <Head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"
+    />
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-SDZLZ08D6Z');
+        `,
+      }}
+    />
+  </Head>
+);
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SDZLZ08D6Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+<CustomHead />
 
-  gtag('config', 'G-SDZLZ08D6Z');
-</script>
+
       <body
         className={cx(
           inter.variable,

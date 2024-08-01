@@ -5,10 +5,21 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import siteMetadata from '../utils/siteMetaData'
 import Script from 'next/script'
-import ReactGA from 'react-ga4'
+
+import dynamic from "next/dynamic";
+import React from 'react';
+import { Suspense } from 'react'
+
+import gTagComp from './gtagComponent'
 
 const TRACKING_ID = "G-SDZLZ08D6Z"
 
+
+
+const DynamicGTagComponent = dynamic(
+  () => import("./gtagComponent"),
+  {ssr:false,}
+)
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,14 +67,18 @@ export const metadata = {
     images: [siteMetadata.socialBanner],
   },
 };
+``
 
 export default function RootLayout({ children }) {
-  ReactGA.initialize(TRACKING_ID);
-  ReactGA.send({ hitType: "pageview", page: "/", title: "Any Page" })
+
+  
+  
   return (
     <html lang="en">
-
-      <body
+    <Suspense>
+      <DynamicGTagComponent></DynamicGTagComponent>
+    </Suspense>
+    <body
         className={cx(
           inter.variable,
           manrope.variable,

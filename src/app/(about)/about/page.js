@@ -2,7 +2,8 @@
 import AboutCoverSection from "../../components/About/AboutCoverSection";
 import Skills from "../../components/About/Skills";
 import Link from "next/link";
-import React from "react"; // Corrected import
+import FormMain from "../../components/About/FormMain";
+
 
 export const metadata = {
     title: "About Burns Law P.C.",
@@ -13,6 +14,7 @@ export const metadata = {
     return (
       <>
         <AboutCoverSection />
+        <FormMain />
         <Skills />
         <h2 className='font-bold text-3xl xs:text-4xl sxl:text-5xl  text-center lg:text-left mt-4 text-dark dark:text-light'>
             affordable pricing options

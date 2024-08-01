@@ -10,12 +10,6 @@ import dynamic from "next/dynamic";
 import React from 'react';
 import { Suspense } from 'react'
 
-import gTagComp from './gtagComponent'
-
-const TRACKING_ID = "G-SDZLZ08D6Z"
-
-
-
 const DynamicGTagComponent = dynamic(
   () => import("./gtagComponent"),
   {ssr:false,}

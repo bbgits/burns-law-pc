@@ -1,7 +1,20 @@
 # Progress Notes
-- tried to deploy using App Hosting...Could not
-- re-deployed using regulary Hosting ... but had already deleted the form.
--
+
+## Myself:
+[x] website deployed to firebase hosting
+[x] blogs and content layer functioning
+[x] google analytics tags working
+[ ] facebook pixel working
+[ ] form styled and componentized
+[ ] form functional (linked to Firebase DB)
+[ ] button to schedule call
+
+## Hire:
+[ ] fix all errors/bugs
+[ ] connect form to database
+[ ] maximize server side rendering / fix "use client" vs "export metadata" bug on (about)>about>page
+[ ] SEO?
+
 
 # SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS 
 This personal blog and website is shared freely in hopes that it empowers non-technical professionals to build their brand and expand their skillset.  It also serves a personal pain point for me, as someone who enjoys writing blog posts (and code!), but feels frustrated with current self-publishing options.

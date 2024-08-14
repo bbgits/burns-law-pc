@@ -1,19 +1,31 @@
 
+"use client"
 import AboutCoverSection from "../../components/About/AboutCoverSection";
 import Skills from "../../components/About/Skills";
-import Link from "next/link";
+import React, { useState } from 'react';
+import { collection, addDoc } from 'firebase/firestore'; // Import the necessary Firestore methods
+import { db } from "@/firebaseConfig";
+// import FormMain from "../../components/About/FormMain";
+import { getDatabase } from "firebase/database";
+import firebase from "firebase/compat/app";
 import FormMain from "../../components/About/FormMain";
 
 
-export const metadata = {
-    title: "About Burns Law P.C.",
-    description: "Here are some details about my self.",
-  };
+
+
+
+// export const metadata = {
+//     title: "About Burns Law P.C.",
+//     description: "Here are some details about my self.",
+//   };
+
+
   
-  export default function About() {
+export default function About() {
     return (
       <>
         <AboutCoverSection />
+        
         <FormMain />
         <Skills />
         <h2 className='font-bold text-3xl xs:text-4xl sxl:text-5xl  text-center lg:text-left mt-4 text-dark dark:text-light'>

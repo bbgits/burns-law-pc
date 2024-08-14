@@ -1,27 +1,8 @@
-# Progress Notes
-
-## Myself:
-[x] website deployed to firebase hosting
-[x] blogs and content layer functioning
-[x] google analytics tags working
-[ ] facebook pixel working
-[ ] form styled and componentized
-[ ] form functional (linked to Firebase DB)
-[ ] button to schedule call
-
-## Hire:
-[ ] fix all errors/bugs
-[ ] connect form to database
-[ ] maximize server side rendering / fix "use client" vs "export metadata" bug on (about)>about>page
-[ ] SEO?
-
-
 # SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS 
-This personal blog and website is shared freely in hopes that it empowers non-technical professionals to build their brand and expand their skillset.  It also serves a personal pain point for me, as someone who enjoys writing blog posts (and code!), but feels frustrated with current self-publishing options.
+This personal blog / website is shared freely in hopes that it empowers non-technical professionals to build their brand and expand their skillset.  It was also a personal pain point for me, as someone who enjoys writing blog posts (and code!), but feels frustrated with current self-publishing options.
 
 By leveraging the rich functionality of the new .mdx document standards and modern hosting and deployment solutions, every journalist can now can be both their own CTO and Editor in Chief!
 
-#
 ## Quick Start (updated)
 
 ### 1. Connect to Firebase
@@ -89,7 +70,7 @@ Each blog post contains the following:
 2. Create new file called "index.mdx" within the "content/url-of-new-blog-post" directory. Make sure to use template and update meta data tor title, description, image, etc.  Keep 'isPublished: false" until you are ready to publish. Add content using markdown for headings.
 3. Create new images directory: public/blogs/title-of-new-story and add all photos/files here. IMPORTANT: make sure the title-of-new-story for this directory is exactly the same as the 'title-of-new-story' for the blog post directory. Place all images related to this blog post within this directory.  When embedding images (which you've placed in this folder), reference must be from from /public, i.e.: "/blogs/title-of-blog/title-of-image.png"
 4. PUBLISH STEP 1: In index.mdx file, change 'isPublished: true', then save and close file.
-5. PUBLISH STEP 2: In terminal, root folder for project, run "firebase deploy".
+5. PUBLISH STEP 2: In terminal, root folder for project, run "firebase deploy --only hosting".
     
 **Update Featured**
 By Default, "featured posts" will include the three most recent blog posts when sorted by the "publishedAt" flag in the meta data.To change this:
@@ -116,3 +97,43 @@ https://youtu.be/1QGLHOaRLwM <br />
 
 Font.
 
+# Progress Notes
+Aug 14, 2024 - The project is nearly ready for launch, it only needs some bug fixes and cleaning up.
+
+
+## Major Milestones
+
+- [x] js/react/contentlayer/mdx website works locally
+- [x] deploy to firebase hosting
+- [x] install gtag for Google Analytics
+- [ ] install Facebook Pixel for FB
+- [ ] hire developer for bug fixes / launch prep
+- [ ] deploy fully functional website
+- [ ] test website + ads 
+- [ ] LAUNCH
+
+## Upwork Job, "Fix Bugs & Connect Form to Firestore DB"
+ERRORS/BUGS ON **HOME** PAGE LOAD:
+- [ ] ERROR: _Unhandled Runtime Error
+Error: The server could not finish this Suspense boundary, likely due to an error during server rendering. Switched to client rendering._
+- [ ] CONSOLE ERROR: _Uncaught Error: Minified React error #419; visit https://reactjs.org/docs/error-decoder.html?invariant=419 for the full message or use the non-minified dev environment for full errors and additional helpful warnings._
+- [ ] CONSOLE ERROR: Failed to load resource: _Failed to load resource: the server responded with a status of 500 ()_ (there are 5 of these errors)
+
+ERRORS/BUGS ON **ABOUT** PAGE LOAD:
+- [ ] CONSOLE ERROR: _Uncaught Error: Minified React error #419; visit https://reactjs.org/docs/error-decoder.html?invariant=419 for the full message or use the non-minified dev environment for full errors and additional helpful warnings._
+- [ ] CONSOLE ERROR: Failed to load resource: _Failed to load resource: the server responded with a status of 500 ()_ (there are 3 of these errors)
+
+ERRORS/BUGS ON **BLOG** PAGE LOAD:
+- [ ] CONSOLE ERROR: _Uncaught Error: Minified React error #419; visit https://reactjs.org/docs/error-decoder.html?invariant=419 for the full message or use the non-minified dev environment for full errors and additional helpful warnings._
+- [ ] CONSOLE ERROR: Failed to load resource: _Failed to load resource: the server responded with a status of 500 ()_ (there are 3 of these errors)
+
+ERRORS/BUGS ON **INDIVIDUAL BLOG PAGES** PAGE LOAD:
+- [ ] CONSOLE ERROR: _Uncaught Error: Minified React error #419; visit https://reactjs.org/docs/error-decoder.html?invariant=419 for the full message or use the non-minified dev environment for full errors and additional helpful warnings._
+- [ ] CONSOLE ERROR: Failed to load resource: _Failed to load resource: the server responded with a status of 500 ()_ (there are 5 of these errors)
+
+CONNECT FORM TO FIREBASE:
+- [ ] Fix code for component at src/app/components/About/FormMain.js so that the form submits data to firestore database and includes some security to prevent spamming.  I have a firebaseconfig.json file in the main directory that seems to be configured appropriately because firebase Hosting and Google Analytics are working for me.
+
+OTHER BUGS/FIXES:
+- [ ] The component for the "about" page (app/(about)/about/page.js) is throwing an error saying I cannot tag the file with "use client" if I also want to "export metadata" ... I'd prefer to Export Metadata for SEO purposes, however I have this line commented out now to avoid an error.  When i do not tag with "use client", another error is thrown.  I'd like to be able to export metadata on this page.
+- [ ] On the home page, the Featured Posts component (src/app/components/home/FeaturedPosts.js) is currently using the sortBlogs function to select articles to display.  I would prefer that I can reference three specific articles here based on the title of the article.  

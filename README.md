@@ -137,3 +137,7 @@ CONNECT FORM TO FIREBASE:
 OTHER BUGS/FIXES:
 - [ ] The component for the "about" page (app/(about)/about/page.js) is throwing an error saying I cannot tag the file with "use client" if I also want to "export metadata" ... I'd prefer to Export Metadata for SEO purposes, however I have this line commented out now to avoid an error.  When i do not tag with "use client", another error is thrown.  I'd like to be able to export metadata on this page.
 - [ ] On the home page, the Featured Posts component (src/app/components/home/FeaturedPosts.js) is currently using the sortBlogs function to select articles to display.  I would prefer that I can reference three specific articles here based on the title of the article.  
+
+
+
+... testing 08-20-2024

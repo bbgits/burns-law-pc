@@ -1,19 +1,17 @@
-import {cx} from '../utils'
-import './globals.css'
-import { Inter, Manrope } from 'next/font/google'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import siteMetadata from '../utils/siteMetaData'
-import Script from 'next/script'
+import { cx } from "../utils";
+import "./globals.css";
+import { Inter, Manrope } from "next/font/google";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import siteMetadata from "../utils/siteMetaData";
+import Script from "next/script";
 
 import dynamic from "next/dynamic";
-import React from 'react';
-import { Suspense } from 'react'
+import React from "react";
 
-const DynamicGTagComponent = dynamic(
-  () => import("./gtagComponent"),
-  {ssr:false,}
-)
+const DynamicGTagComponent = dynamic(() => import("./gtagComponent"), {
+  ssr: false,
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -61,18 +59,13 @@ export const metadata = {
     images: [siteMetadata.socialBanner],
   },
 };
-``
+``;
 
 export default function RootLayout({ children }) {
-
-  
-  
   return (
     <html lang="en">
-    <Suspense>
-      <DynamicGTagComponent></DynamicGTagComponent>
-    </Suspense>
-    <body
+      {typeof window !== "undefined" && <DynamicGTagComponent />}
+      <body
         className={cx(
           inter.variable,
           manrope.variable,
@@ -86,12 +79,12 @@ export default function RootLayout({ children }) {
     document.documentElement.classList.remove('dark')
   }`}
         </Script>
-        
+
         <Header />
+
         {children}
         <Footer />
       </body>
-
     </html>
   );
 }

@@ -42,7 +42,7 @@ next-env.d.ts
 
 # firebase credentials
 firebaseConfig.js
-firebaseConfig
+.firebaseConfig
 .firebase/*
 .firebase/
 .firebase

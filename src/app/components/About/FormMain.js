@@ -28,6 +28,7 @@ const FormMain = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("trying to submit 1...")
     if (
       formData.firstName &&
       formData.email &&
@@ -36,6 +37,7 @@ const FormMain = () => {
     ) {
       // Save the form data to the Cloud Firestore
       try {
+        console.log("trying to submit 2...")
         const docRef = await addDoc(collection(db, "form"), formData);
         console.log("Document written with ID: ", docRef.id);
         setSubmitStatus("success");
@@ -114,7 +116,7 @@ const FormMain = () => {
           ></textarea>
         </div>
         <ReCAPTCHA
-          sitekey="6LehmzAqAAAAANWXR415D1ebBeOR9GrsMoOpdLkI"
+          sitekey="6LfZ5DcqAAAAAMsfMSt-IbWa2yFlzsd8BArhTp4H"
           onChange={handleCaptchaChange}
         />
         <div className="flex items-center justify-end">

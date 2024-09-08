@@ -114,7 +114,7 @@ const FormMain = () => {
           ></textarea>
         </div>
         <ReCAPTCHA
-          sitekey="6LehmzAqAAAAANWXR415D1ebBeOR9GrsMoOpdLkI"
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
           onChange={handleCaptchaChange}
         />
         <div className="flex items-center justify-end">

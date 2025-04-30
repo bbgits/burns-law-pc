@@ -1,3 +1,4 @@
+// ~/src/app/page.js
 import Image from 'next/image'
 import {allBlogs} from "contentlayer/generated"
 import HomeCoverSection from './components/home/HomeCoverSection';

@@ -1,3 +1,5 @@
+// ~/src/app/(about)/about/page.js
+
 "use client";
 import AboutCoverSection from "../../components/About/AboutCoverSection";
 import Skills from "../../components/About/Skills";
@@ -8,6 +10,8 @@ import { db } from "@/firebaseConfig";
 import { getDatabase } from "firebase/database";
 import firebase from "firebase/compat/app";
 import FormMain from "../../components/About/FormMain";
+import FormEasy from "../../components/About/FormEasy";
+import FormSimple from "../../components/About/FormSimple"
 
 // export const metadata = {
 //   title: "About Burns Law P.C.",
@@ -18,7 +22,8 @@ export default function About() {
   return (
     <>
       <AboutCoverSection />
-
+      {/* <FormSimple />
+      <FormEasy /> */}
       <FormMain />
       <Skills />
       <h2 className="font-bold text-3xl xs:text-4xl sxl:text-5xl  text-center lg:text-left mt-4 text-dark dark:text-light">
@@ -28,9 +33,25 @@ export default function About() {
       <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal">
         <span className="font-extrabold underline">
           {" "}
+          1 Hr Consult ($225)
+        </span>{" "}
+       Video Call to discuss your matter and help you understand your legal options. Payment due at start of meeting, Book Here. {" "}
+      </h2>
+      <button
+        onClick={() => {
+          window.open('https://calendly.com/brian-burnslawpc/legal-consult', '_blank');
+        }}
+        className="bg-green-900 hover:bg-green-950 text-md text-white font-bold mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >
+        Book 1 Hr Consult ($225 Due at Mtg.)
+      </button>
+
+      <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal">
+        <span className="font-extrabold underline">
+          {" "}
           Pro-Se PLUS (from $300)
         </span>{" "}
-        In law, &#34Pro Se&#34 means that a person is representing themselves in court
+        In law, 'Pro Se' means that a person is representing themselves in court
         (I will not be representing you). This limited scope engagement includes
         a 1 hr initial consult where I will explain court proceedures and
         provide guidance on getting started. I can also help you draft several
@@ -46,8 +67,8 @@ export default function About() {
         For straightforward cases, I offer a Flat Fee option that includes
         filing standardized pleadings and representing you in court. While I
         cannot gaurantee that the Flat Fee will be sufficient to complete your
-        case, we provide clear contingencies and pre-priced &#39add-on&#39 services so
-        that you know how much certain legal &#39detours&#39 will cost ahead of time.
+        case, we provide clear contingencies and pre-priced ('add-on') services so
+        that you know how much certain legal detours could cost ahead of time.
       </h2>
 
       <h2 className="mt-8 font-semibold text-lg md:text-2xl self-start mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal">

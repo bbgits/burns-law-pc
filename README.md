@@ -37,7 +37,14 @@ export {app, db}
 
 ### 2. Run the Development Server Locally:
 
+STARTING FROM GIT...
+- `git clone https://github.com/bbgits/burns-law-pc.git`
+- from project root: `npm i`
+- from project root: `
+
+
 ```bash
+npm run build
 npm run dev
 # or
 yarn dev

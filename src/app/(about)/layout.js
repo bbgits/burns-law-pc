@@ -1,14 +1,16 @@
+// // ~/src/app/(about)/layout.js
+
 import InsightRoll from "../components/About/InsightRoll";
 
 
 const insights = [
-    "Licensed Since 2016 - test2",
-    "Family Law Focus",
-    "Modern Legal Practice",
-    "Affordable Pricing",
+    "Licensed Since 2016",
+    "Family Law",
+    "Modern Practice",
+    "Transparent Pricing",
     "Clear Communication",
     "Vigorous Advocacy",
-    "Honest Advice",
+    "Good Advice",
   ];
 
 export default function AboutLayout({ children }) {

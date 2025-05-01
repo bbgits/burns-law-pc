@@ -1,3 +1,4 @@
+// ~/src/app/layout.js
 import { cx } from "../utils";
 import "./globals.css";
 import { Inter, Manrope } from "next/font/google";

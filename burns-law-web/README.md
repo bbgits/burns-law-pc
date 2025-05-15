@@ -4,6 +4,7 @@ This personal blog / website is shared freely in hopes that it empowers non-tech
 By leveraging the rich functionality of the new .mdx document standards and modern hosting and deployment solutions, every journalist can now can be both their own CTO and Editor in Chief!
 ## Git, Firebase Config, Etc.
 - Git Repo: `bbgits/burns-law-pc`
+
 - Firebase Project: `burns-law-web`
 
 ## Quick Start (updated)

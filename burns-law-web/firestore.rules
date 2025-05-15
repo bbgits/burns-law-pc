@@ -6,7 +6,8 @@ service cloud.firestore {
       allow write: if request.resource.data.firstName is string &&
                    request.resource.data.email is string &&
                    request.resource.data.message is string &&
-                   request.resource.data.captchaVerified == true;
+                   request.resource.data.captchaVerified == true &&
+                   request.resource.data.timestamp is timestamp;
       allow read: if false; // Disable public read access
     }
   }

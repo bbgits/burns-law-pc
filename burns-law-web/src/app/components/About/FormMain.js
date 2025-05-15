@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore"; // Import Firestore methods
+import { db } from "../../../../firebaseConfig"; // Import Firestore configuration
 
 // Dynamically import ReCAPTCHA with `ssr: false`
 const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"), { ssr: false });
@@ -24,8 +26,10 @@ const FormMain = () => {
     console.log("CAPTCHA value:", value); // Debugging log
     if (value) {
       setCaptchaVerified(true);
+      console.log("CAPTCHA verified successfully.");
     } else {
       setCaptchaVerified(false);
+      console.log("CAPTCHA verification failed.");
     }
   };
 
@@ -33,21 +37,32 @@ const FormMain = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log("Form submission triggered.");
     console.log("Form data:", formData); // Debugging log
     console.log("Captcha verified:", captchaVerified); // Debugging log
 
     // Validate form fields and CAPTCHA
     if (formData.firstName && formData.email && formData.message && captchaVerified) {
       try {
-        // Simulate Firestore submission (replace with actual Firestore logic)
         console.log("Submitting form to Firestore...");
+
+        // Add the form data to Firestore
+        const docRef = await addDoc(collection(db, "form"), {
+          firstName: formData.firstName,
+          email: formData.email,
+          message: formData.message,
+          captchaVerified: true,
+          timestamp: serverTimestamp(), // Add a timestamp field
+        });
+
+        console.log("Document successfully written to Firestore with ID:", docRef.id);
         setSubmitStatus("success");
-      } catch (e) {
-        console.error("Error adding document:", e);
+      } catch (error) {
+        console.error("Error adding document to Firestore:", error);
         setSubmitStatus("error");
       }
     } else {
-      console.error("Form data is incomplete or CAPTCHA not verified");
+      console.error("Form data is incomplete or CAPTCHA not verified.");
       setSubmitStatus("error");
     }
   };
@@ -132,6 +147,14 @@ const FormMain = () => {
               >
                 Submit
               </button>
+                 <button
+     type="button"
+     onClick={handleSubmit}
+     className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+   >
+     Debug Submit
+   </button>
+
             </div>
           </form>
         </>

@@ -8,6 +8,7 @@ const FormSimple = () => {
     firstName: "",
     email: "",
     message: "",
+    
   });
   const [isSubmitted, setIsSubmitted] = useState(false); // Tracks if the form is submitted
   const [error, setError] = useState(""); // Tracks any errors during submission

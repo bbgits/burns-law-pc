@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-import { collection, addDoc } from "firebase/firestore"; // Import Firestore methods
-import { db } from "../../../../firebaseConfig";
 
 // Dynamically import ReCAPTCHA with `ssr: false`
 const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"), { ssr: false });
@@ -43,11 +41,6 @@ const FormMain = () => {
       try {
         // Simulate Firestore submission (replace with actual Firestore logic)
         console.log("Submitting form to Firestore...");
-        const docRef = await addDoc(collection(db, "form"), {
-          ...formData,
-          captchaVerified: true,
-        });
-        console.log("Document written with ID: ", docRef.id);
         setSubmitStatus("success");
       } catch (e) {
         console.error("Error adding document:", e);

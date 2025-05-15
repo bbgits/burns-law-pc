@@ -1,11 +1,10 @@
 // ~/src/app/(about)/about/page.js
+
 "use client";
 
 import AboutCoverSection from "../../components/About/AboutCoverSection";
 import Skills from "../../components/About/Skills";
 import React, { useState, useEffect } from "react";
-import { collection, addDoc } from "firebase/firestore"; // Import Firestore methods
-import { db } from "../../../../firebaseConfig"; // Import Firestore configuration
 import FormMain from "../../components/About/FormMain";
 
 export default function About() {

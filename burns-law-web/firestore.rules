@@ -6,9 +6,26 @@ service cloud.firestore {
       allow write: if request.resource.data.firstName is string &&
                    request.resource.data.email is string &&
                    request.resource.data.message is string &&
+                   (!("phoneNumber" in request.resource.data) || request.resource.data.phoneNumber is string) &&
                    request.resource.data.captchaVerified == true &&
                    request.resource.data.timestamp is timestamp;
       allow read: if false; // Disable public read access
+    }
+
+    // Match all documents in the "groceryForm" collection
+    match /groceryForm/{document} {
+      allow write: if request.resource.data.name is string &&
+                   request.resource.data.email is string &&
+                   (!("phoneNumber" in request.resource.data) || request.resource.data.phoneNumber is string) &&
+                   request.resource.data.approximateVisitDate is string &&
+                   request.resource.data.purchaseOutcome is string &&
+                   request.resource.data.purchaseOutcome in ['full price', 'sale price', 'did not buy item'] &&
+                   request.resource.data.hasReceipt is string &&
+                   request.resource.data.hasReceipt in ['yes', 'no'] &&
+                   request.resource.data.experience is string &&
+                   request.resource.data.captchaVerified == true &&
+                   request.resource.data.timestamp is timestamp;
+      allow read: if false;
     }
   }
 }

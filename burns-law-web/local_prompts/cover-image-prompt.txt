@@ -1,0 +1,16 @@
+FEEDBACK:
+
+
+OVERALL PROMPT: Please create an image using the following guides for STYLE, COLORS, and SUBJECT:
+
+STYLE: old-school comic book style with elegant gradients; modern, clean style with minimal and flowing line work; comfortable amount of white or sepia or white background space.  The figures should have very minimal / modern features if any at all and the style should be stylized and vibe-ey.
+
+COLORS:
+To fit the design scheme, 
+-the background and all edges must be white or light cream/sepia. 
+-Primary color / gradient = dark teal / RGB(46,80,76) to black
+-Secondary color / gradient = white / light cream
+-Background color = white / very faded sepia or texture
+
+SUBJECT:
+The image should demonstrate an equation that is symbolically dividing assets between a man and a woman.  

@@ -42,14 +42,18 @@ const Footer = () => {
     <footer className="mt-12 lg:mt-16 rounded-2xl bg-dark dark:bg-bbDark flex flex-col items-center text-light">
       {/* Existing content */}
       {/* {submitted ? ( // Conditionally render based on form submission */}
-        <p className="mt-6 mb-2 lg:mt-16 font-medium text-center text-2xl">
-          Have a legal problem? Send me an email:
+        <p className="mt-2 mb-2 lg:mt-6 font-medium text-center text-2xl">
+          Have a legal problem? Reach Out:
         </p>
-        <p className="mb-6 font-medium text-center text-xl sm:text-2xl lg:text-4xl px-4">
-          Brian@BurnsLawPC.com
+        <p className="font-small text-center text-lg sm:text-lg lg:text-lg px-4">
+          em:  Brian@BurnsLawPC.com
         </p>
+        <p className="font-small text-center text-lg sm:text-lg lg:text-lg px-4">
+          ph:  (773) 236-2002
+        </p>
+        
         <p className="mt-2 mb-2 lg:mt-2 font-medium text-center text-">
-          DISCLAIMERS: NO LAWYER-CLIENT RELATIONSHIP IS CREATED BY SENDING ME AN EMAIL. <br></br> I AM NOT YOUR LAWYER UNLESS YOU HAVE SIGNED A RETAINER AGREEMENT. <br></br> BRIAN BURNS IS LICENSED TO PRACTICE LAW IN ILLINOIS AND MAINTAINS REQUIRED INSURANCE. <br></br>ALL LEGAL SERVICES PROVIDED INDIVIDUALLY BY BRIAN BURNS (AND NOT BY BURNS LAW P.C.) UNLESS OTHERWISE AGREED. <br></br> ALL ARTICLES AND CONTENT PROVIDE GENERAL INFORMATION ONLY AND SHOULD NOT BE CONSTRUED AS LEGAL ADVICE OR AS A SUBSTITUTE FOR LEGAL ADVICE.
+          DISCLAIMERS: NO LAWYER-CLIENT RELATIONSHIP IS CREATED BY SENDING ME AN EMAIL. I AM NOT YOUR LAWYER UNLESS YOU HAVE SIGNED A RETAINER AGREEMENT.  BRIAN BURNS IS LICENSED TO PRACTICE LAW IN ILLINOIS AND MAINTAINS REQUIRED INSURANCE. ALL LEGAL SERVICES PROVIDED INDIVIDUALLY BY BRIAN BURNS (AND NOT BY BURNS LAW P.C.) UNLESS OTHERWISE AGREED. ALL ARTICLES AND CONTENT PROVIDE GENERAL INFORMATION ONLY AND SHOULD NOT BE CONSTRUED AS LEGAL ADVICE OR AS A SUBSTITUTE FOR LEGAL ADVICE.
         </p>
 
       {/* ) : (

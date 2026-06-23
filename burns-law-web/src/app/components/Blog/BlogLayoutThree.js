@@ -17,7 +17,7 @@ const BlogLayoutThree = ({blog}) => {
                 />
         </Link>
         <div className="flex flex-col w-full mt-4">
-            <span className="uppercase text-accent font-semibold text-xs sm:text-sm cursor-pointer">{blog.tags[0]}</span>
+            <span className="uppercase text-accent font-semibold text-xs sm:text-sm dark:text-green-200 text-green-800 cursor-pointer">{blog.tags[0]}</span>
             <Link href={blog.url} className="inline-block my-1">
                 <h2 className="font-semibold capitalize text-base md:text-lg lg:text-xl">
                     <span className="bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] group-hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 dark:text-light">{blog.title}</span>

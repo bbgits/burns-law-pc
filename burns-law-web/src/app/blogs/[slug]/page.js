@@ -1,3 +1,4 @@
+
 import BlogDetails from "../../components/Blog/BlogDetails";
 import RenderMdx from "../../components/Blog/RenderMdx";
 import Tag from "../../components/Elements/Tag";
@@ -5,6 +6,7 @@ import siteMetadata from "@/siteMetaData";
 import { allBlogs } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
+
 
 export async function generateStaticParams() {
     return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
@@ -124,7 +126,7 @@ export default function BlogPage({ params }) {
             open
           >
             <summary className="text-lg font-semibold capitalize cursor-pointer">
-              Table Of Content
+              Table Of Contents
             </summary>
             <ul className="mt-4 font-in text-base">
               {blog.toc.map((heading) => {
@@ -155,8 +157,13 @@ export default function BlogPage({ params }) {
           </details>
         </div>
         <RenderMdx blog={blog} />
+        
+      </div>
+      <div className="blog-footer-info">
+        <p className="dark:text-green-100">This article contains general information and is NOT legal advice. </p>
       </div>
     </article>
+
     </>
    
   );

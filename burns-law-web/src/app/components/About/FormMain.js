@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore"; // Import Firestore methods
+import { collection, addDoc, Timestamp } from "firebase/firestore"; // Import Firestore methods
 import { db } from "../../../../firebaseConfig"; // Import Firestore configuration
 
 // Dynamically import ReCAPTCHA with `ssr: false`
@@ -52,7 +52,7 @@ const FormMain = () => {
           email: formData.email,
           message: formData.message,
           captchaVerified: true,
-          timestamp: serverTimestamp(), // Add a timestamp field
+          timestamp: Timestamp.now(), // Add a timestamp field
         });
 
         console.log("Document successfully written to Firestore with ID:", docRef.id);
@@ -82,10 +82,10 @@ const FormMain = () => {
             onSubmit={handleSubmit}
             className="bg-white shadow-md rounded sm:px-8 md:px-12 lg:px-18 pt-6 pb-8 mt-8 mb-4 sm:mx-6 md:mx-20 lg:mx-24"
           >
-            <div className="mb-4 flex flex-wrap">
+            <div className="mb-4 flex flex-wrap mx-4">
               <div className="w-full md:w-1/2 md:pr-3 mb-4 md:mb-0">
                 <label
-                  className="block text-gray-700 text-md font-bold mb-2"
+                  className="block text-gray-700 text-md font-bold mb-2 dark:text-black"
                   htmlFor="firstName"
                 >
                   Your Name
@@ -97,12 +97,12 @@ const FormMain = () => {
                   onChange={handleInputChange}
                   placeholder="First Name"
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:border-green-700 focus:ring-1 focus:ring-green-700 "
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-black placeholder:text-gray-500 leading-tight focus:border-green-700 focus:ring-1 focus:ring-green-700 dark:text-black"
                 />
               </div>
               <div className="w-full md:w-1/2 md:pl-3">
                 <label
-                  className="block text-gray-700 text-md font-bold mb-2"
+                  className="block text-gray-700 text-md font-bold mb-2 dark:text-black"
                   htmlFor="email"
                 >
                   Email
@@ -114,13 +114,13 @@ const FormMain = () => {
                   onChange={handleInputChange}
                   placeholder="Email"
                   required
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:border-green-700 focus:ring-1 focus:ring-green-700"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-black placeholder:text-gray-500 leading-tight focus:border-green-700 focus:ring-1 focus:ring-green-700 dark:text-black"
                 />
               </div>
             </div>
-            <div className="mb-6">
+            <div className="mb-6 mx-4">
               <label
-                className="block text-gray-700 text-md font-bold mb-2"
+                className="block text-gray-700 text-md font-bold mb-2 dark:text-black"
                 htmlFor="message"
               >
                 Describe your legal problem:
@@ -131,7 +131,7 @@ const FormMain = () => {
                 onChange={handleInputChange}
                 placeholder="Your message"
                 required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:border-green-700 focus:ring-1 focus:ring-green-700 h-32"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-black placeholder:text-gray-500 leading-tight focus:border-green-700 focus:ring-1 focus:ring-green-700 h-32 dark:text-black"
               ></textarea>
             </div>
             <div className="flex w-full justify-center">
@@ -147,13 +147,7 @@ const FormMain = () => {
               >
                 Submit
               </button>
-                 <button
-     type="button"
-     onClick={handleSubmit}
-     className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
-   >
-     Debug Submit
-   </button>
+                 
 
             </div>
           </form>

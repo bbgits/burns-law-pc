@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
+  "/grocery/page": "app/grocery/page.js",
+  "/blogs/[slug]/page": "app/blogs/[slug]/page.js"
+}

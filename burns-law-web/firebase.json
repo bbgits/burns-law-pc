@@ -4,16 +4,14 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "source": "hosting",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "frameworksBackend": {
-      "region": "us-central1"
-    }
-  },
+       "public": "out",
+       "cleanUrls": true,
+       "ignore": [
+         "firebase.json",
+         "**/.*",
+         "**/node_modules/**"
+       ]
+     },
   "emulators": {
     "firestore": {
       "port": 8080

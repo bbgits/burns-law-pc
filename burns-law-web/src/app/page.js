@@ -1,6 +1,6 @@
 // ~/src/app/page.js
-import Image from 'next/image'
-import {allBlogs} from "contentlayer/generated"
+import { allBlogs } from "contentlayer/generated";
+import HomeHeaderContact from "./components/home/HomeHeaderContact";
 import HomeCoverSection from './components/home/HomeCoverSection';
 import FeaturedPosts from './components/home/FeaturedPosts';
 import RecentPosts from './components/home/RecentPosts';
@@ -9,6 +9,7 @@ import RecentPosts from './components/home/RecentPosts';
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
+      <HomeHeaderContact />
       <HomeCoverSection blogs={allBlogs} />
       <FeaturedPosts blogs={allBlogs} />
       <RecentPosts blogs={allBlogs} />

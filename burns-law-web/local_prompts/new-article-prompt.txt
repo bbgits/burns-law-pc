@@ -1,0 +1,215 @@
+PROMPT:
+I have a website for my Illinois law firm that uses MDX files to populate the blog.  I want to create a new file / blogpost called 'What is Marital Property in Illinois?'.  I'm including a Reputable Source (See Below) that I would like to summaraize and reference the same citations to the statute.  I want the blog post to be in the same style and format as the Style Reference Files (See Below) which are the correct mdx format for my web app. 
+
+
+REPUTABLE SOURCE:
+What Is Marital Property In An Illinois Divorce?
+There are very few contested facts in an Illinois divorce. In fact, there are really only two sets of facts that matter, financially, in an Illinois divorce: the parties’ respective incomes and what assets will be marital property.
+
+W2s, Tax Returns and paystubs quickly establish what the incomes are for 90% of divorce litigants.
+
+Marital property has no government mandated seals of approval. Instead, every Illinois divorce court must determine what will be deemed marital property in an Illinois divorce. The purpose of deeming a particular property as “marital” is so that property may be divided between the parties.
+
+Before determining if a property is marital or not-marital, a court must first be made aware of the property. “[I]t is the parties’ obligation to present the court with sufficient evidence of…the property [and its value]” In re Marriage of Smith, 114 Ill. App. 3d 47, 54 (Ill. App. Ct. 1983)
+
+Only Marital Property May Be Divided In An Illinois Divorce
+
+The distinction between marital property and non-marital property is so crucial because non-marital property may NOT be divided by a divorce court.
+
+“[T]he court shall assign each spouse’s non-marital property to that spouse.” 750 ILCS 5/503(d)
+
+Whereas marital property SHALL be divided by an Illinois divorce court.
+
+An Illinois divorce court “shall divide the marital property without regard to marital misconduct in just proportions” 750 ILCS 5/503(d)
+
+This requires every person undergoing a divorce in Illinois to assess what of their property and their spouse’s property is marital and what is not marital.
+
+An Illinois divorce court must determine whether each piece of property both or either spouses own is marital or non-marital.
+
+“The court shall make specific factual findings as to its classification of assets as marital or non-marital property, values, and other factual findings supporting its property award.” 750 ILCS 5/503(a)
+
+Marital Property Is Determined By The Date Of Acquisition In An Illinois Divorce
+
+There is a fine line as to what is marital property and what is non-marital property and 90% of the time, marital property and non-marital property and determined by the date of the acquisition of said property.
+
+If property is acquired before the marriage date. That property is non-marital.
+
+[T]he following…which is known as “non-marital property”… property acquired before the marriage” 750 ILCS 5/503(a)(6)
+
+Property acquired by either spouse after the date of the marriage will be deemed marital property.
+
+“‘[M]arital property’ means all property, including debts and other obligations, acquired by either spouse subsequent to the marriage” 750 ILCS 5/503(a)
+
+“For purposes of distribution of property, all property acquired by either spouse after the marriage and before a judgment of dissolution of marriage or declaration of invalidity of marriage is presumed marital property.” 750 ILCS 5/503(b)
+
+“[T]here is a rebuttable presumption that all property acquired by either spouse after the date of marriage but before the entry of judgment of dissolution is marital property, regardless of how title is held. ” In re Marriage of Didier, 318 Ill. App. 3d 253, 258 (Ill. App. Ct. 2000)
+
+A quick rule of thumb is that if the asset (or the money used to purchase the asset) was earned during the marriage, the asset is marital.
+
+A spouse’s salary and the purchases therefrom are “marital property when earned, being remuneration to respondent during the marriage.” In re Marriage of Steel, 2011 IL App (2d) 080974
+
+“[R]emuneration to a spouse, in whatever form, during the marriage is considered marital property.” In re Marriage of Phillips, 229 Ill. App. 3d 809, 817 (1992)
+
+So, step 1 of determining if property is marital or non-marital in an Illinois divorce is determining the property’s acquisition date. This is largely determined by agreement of the parties. Failure of the parties to agree as to when either party acquired the property will result in an evidentiary hearing where the parties will testify as to when they acquired the property and offer any corroborative physical evidence as to the date of acquisition (receipts, bank statements, etc.).
+
+What Property Acquired After Marriage Is Non-Marital?
+
+Some property acquired after the date of marriage may still be deemed non-marital. Generally, if the property came from a source outside of the marriage, the property will retain its non-marital and, thus, non-divisible character.
+
+[T]he following…which is known as “non-marital property”:
+
+(1) property acquired by gift, legacy or descent or property acquired in exchange for such property;
+
+(2) property acquired in exchange for property acquired before the marriage;
+
+(3) property acquired by a spouse after a judgment of legal separation;
+
+(4) property excluded by valid agreement of the parties, including a premarital agreement or a postnuptial agreement;
+
+(5) any judgment or property obtained by judgment awarded to a spouse from the other spouse except, however, when a spouse is required to sue the other spouse in order to obtain insurance coverage or otherwise recover from a third party and the recovery is directly related to amounts advanced by the marital estate, the judgment shall be considered marital property;
+
+(6) property acquired before the marriage, except as it relates to retirement plans that may have both marital and non-marital characteristics;
+
+(6.5) all property acquired by a spouse by the sole use of non-marital property as collateral for a loan that then is used to acquire property during the marriage; to the extent that the marital estate repays any portion of the loan, it shall be considered a contribution from the marital estate to the non-marital estate subject to reimbursement;
+
+(7) the increase in value of non-marital property, irrespective of whether the increase results from a contribution of marital property, non-marital property, the personal effort of a spouse, or otherwise, subject to the right of reimbursement provided in subsection (c) of this Section; and
+
+(8) income from property acquired by a method listed in paragraphs (1) through (7) of this subsection if the income is not attributable to the personal effort of a spouse.” 750 ILCS 5/503(a)
+
+Step 2 of defining marital property in an Illinois divorce is carving out the mon-marital property from the post-marriage acquired property. Again, this is done by agreement of the parties or via an evidentiary hearing based on the testimony and documentary evidence presented by the parties.
+
+Non-Marital Property That Becomes Marital Property During The Course Of An Illinois Marriage
+
+Non-marital property as determined in step 2 can become marital via transmutation.
+
+“Transmutation is based on the presumption that the owner of the nonmarital property intended to make a gift of it to the marital estate.” In re Marriage of Vondra, 2016 IL App (1st) 150793
+
+Transmutation occurs via gift from spouse to the marital estate. Essentially, a gift from one spouse to both spouses as a couple.
+
+A gift is a voluntary, gratuitous transfer of property by one to another where the donor manifests an intent to make such a gift and absolutely and irrevocably delivers the property to the donee.” In re Marriage of Cook, 117 Ill. App. 3d 844, 849 (Ill. App. Ct. 1983)
+
+These gifts are usually made by putting property in both parties names such as putting a house or car in both parties’ names or depositing assets into an account in both parties’ names.
+
+Gifts to the marriage can also be presumed from commingling of marital and non-marital property.
+
+“The commingling of marital and nonmarital assets, and the contribution of marital assets to nonmarital property must be sufficiently significant to raise a presumption of a gift of the property to the marital estate.” In re Marriage of Olson, 451 NE 2d 825 – Ill: Supreme Court 1983
+
+Disproving an alleged gift to a marriage is the duty of the alleged donor. “In dissolution proceedings, the “donor” spouse may rebut the presumption of gift with clear, convincing and unmistakable evidence” In re Marriage of Rink, 136 Ill. App. 3d 252, 257 (Ill. App. Ct. 1985)
+
+Step 3 is determining what of the alleged non-marital property of either spouse has been converted to marital property via a gift to the marital estate. The gift must be proven or disproven via evidence from both spouses, both in testimonial and documentary form.
+
+What If We Cannot Determine If A Property Is Marital Or Non-Marital In An Illinois Divorce?
+
+After 3 separate steps to determine if a property is marital or non-marital for the purposes of the Illinois Marriage and Dissolution of Marriage Act, things can get a little fuzzy. There is no category for “kind of marital,” however. The court must make a decision as the marital or non-marital nature of the asset.
+
+If an Illinois divorce court cannot find that the property is non-marital, an Illinois divorce court must find that the property is marital.
+
+“Any doubt as to the nature of the property must be resolved in favor of the finding that it is marital” In re Marriage of Steel, 2011 IL App (2d) 080974
+
+When Is An Asset Officially Marital Property In An Illinois Divorce?
+
+You just read 1300 words about how an Illinois divorce court decides whether an asset is marital or non-marital. It can be an arduous process for a court to make that finding. So, what is that asset before the Illinois divorce court decides if it is marital or non-marital?
+
+An asset has neither marital nor non-marital character until an Illinois divorce court makes that finding.
+
+“[U]ntil a final determination is made by the trial court regarding the division of the disputed personal property pursuant to the petition for dissolution of marriage, respondent can claim no clear, ascertainable legal right to the exclusive possession of that property. At the present time, each party has an equal possessory right.” In re Marriage of Sherwin, 123 Ill. App. 3d 748, 753 (Ill. App. Ct. 1984)
+
+“[U]nder the [Marriage and Dissolution of Marriage] Act, operation of the term “marital property” does not trigger until the time of dissolution. It is only property owned at the time of the judgment of dissolution that the court may classify as “marital property,” and property owned separately by the spouse before dissolution may be disposed of as he/she deems fit, absent any contrary order of the court. The court has power to adjust and determine the rights of one party in the property of the other only where a divorce has been granted.” In re Marriage of Schwartz, 131 Ill. App. 3d 351, 355 (Ill. App. Ct. 1985) (Citations Omitted)
+
+Therefore, temporary motions before a divorce is final shall not be based on any premature conclusions as to whether an asset is marital or not. There won’t be any complaining about someone throwing away a marital asset, spending marital money or destroying non-marital property.
+
+Those conclusions as to the properties characters will be made at the end of the divorce case and any untoward activity done to a finally determined marital property will be considered.
+
+How Does Marital Property Get Divided In An Illinois Divorce?
+
+An Illinois divorce court “shall divide the marital property without regard to marital misconduct in just proportions considering all relevant factors, including:
+
+(1) each party’s contribution to the acquisition, preservation, or increase or decrease in value of the marital or non-marital property” 750 ILCS 5/503(d)(1)
+
+This final division of marital assets is an equitable division.
+
+“Just proportions does not mean strict equality but only an equitable division.” In re Marriage of Albrecht, 266 Ill. App. 3d 399, 402 (Ill. App. Ct. 1994)
+
+An equitable division is “[t]he division of marital property by a court in a divorce proceeding, under statutory guidelines that provide for fair, but not necessarily equal, allocation of the property between the spouses.” Black’s Law Dictionary (11th ed. 2019)
+
+“[E]quitable division depends on more than merely an analysis of dollars and cents.” In re Marriage of Abu-Hashim, 2014 IL App (1st) 122997, ¶ 22, 14 N.E.3d 524.
+
+“[E]ach case rests on its own facts” In re Marriage of Jones, 187 Ill. App. 3d 206, 222 (Ill. App. Ct. 1989)
+
+So, once marital assets are determined in an Illinois divorce. Those marital assets can be divided any way that the court deems fair based on any relevant facts presented to that court.
+
+“The [trial] court has broad discretion in the distribution of marital assets.” In re Marriage of Walker, 386 Ill. App. 3d 1034 at 1042
+
+If you would like a careful analysis of what items you and your spouse own will be deemed marital or non-marital, contact my Chicago, Illinois family law firm to schedule a free consultation with an experienced Illinois divorce attorney.
+
+
+
+
+
+
+
+
+
+REFERENCE FILES:
+
+// hot-to-calculate-child-support-in-illinois/index.mdx
+
+---
+title: "How to Calculate Child Support in Illinois"
+description: "What factors are used and how are the calculations run?"
+image: "../../public/blogs/how-to-calculate-child-support-in-illinois/cover.png"
+publishedAt: "2024-07-15"
+updatedAt: "2024-07-11"
+author: "Brian Burns"
+isPublished: true
+tags:
+- family law
+---
+
+# Child Support in Illinois
+## Overview 
+In an Illinois divorce proceeding or child support proceedings, the analysis of potential child support payments is in three steps:
+
+**1. Is a person oblgated to pay child support?**  Child Support is intended to ensure the child is properly taken care of given the resources of their parents.  Both parents are legally required to support their child.  The parent that does not have majority parenting time (calculated based on the number of overnights) typically must pay child support.
+
+**2. How much are the Child Support payments?** Illinois provides a detailed procedure for calculating Child Support payments.  See <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">750 ILCS 5/505(a)(1)</a>  This involves calculating the total income of both parents, using a formula to determine how much total the typical family with this income would spend on a child (the "Basic Support Obligation"), and then calculating each parent's share.    The Illinois Department of Healthcare and Family Services provides a <a href="https://hfs.illinois.gov/content/dam/soi/en/web/hfs/sitecollectiondocuments/standalonesupportobligationworksheet.pdf" target="_blank">Calculation Worksheet</a>  that helps to explain the calculations.
+
+**3.  How long will Child Support payments be required?** Illinois requires the Obligor (the person paying Child Support) to make payments until the child turns 18 or graduates high school (if this is after they turn 18) or 19:
+> *The termination date shall be no earlier than the date on which the child covered by the order will attain the age of 18. However, if the child will not graduate from high school until after attaining the age of 18, then the termination date shall be no earlier than the earlier of the date on which the child's high school graduation will occur or the date on which the child will attain the age of 19.*  <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">See 750 ILCS 5/505(g)</a>.
+
+
+
+## Who Must Pay Child Support in Illinois?
+
+As a general rule, the non-custodial parent must pay child support in Illinois.  The Illinois Department of Healthcare and Family Services provides an <a href="https://cscwebext.hfs.illinois.gov/CscWebEx/app/estimator?execution=e1s1" target="_blank">Illinois Child Support Estimator</a> on their website that can be used to calcualte Child Support payments.  The amount of Child Support payments depends in part on the number of overnights the child spends with each parent.  If both parents have at least 146 overnights, this is considered "Shared Physical Care," and the obligor is generally required to pay significantly less money in Child Support payments in these circumstances. <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">See 750 ILCS 5/505(a)(3.8)</a>.  It is very important to understand how the parenting schedule will affect Child Support payments and you should hire an Attorney if you have questions. 
+
+## How Are Child Support Payments Calculated in Illinois?
+Illinois statute dictates the procedure for calculating Child Support Payments.  While there are important exceptions and situations where the standard calculations may not apply, the standard calculation is computed as follows:
+
+1. **Calculate Gross Income and Net Income for Each Parent.** The statute provides details for what is included in "Gross Income" for purposes of calculating Child Support.  <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">See 750 ILCS 5/505(a)(3).</a>  After finding the Gross Income for each parent, state law requires that the the Illinois Department of Healthcare and Family Services must *"promulgate a standardized net income conversion table that computes net income by deducting the standardized tax amount from gross income."*  <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">See 750 ILCS 5/505(a)(3)(C)(II).</a>  The Illinois Department of Healthcare and Family Services has published a copy of the <a href="https://hfs.illinois.gov/content/dam/soi/en/web/hfs/childsupport/parents/2025grosstonetictusta.pdf" target="_blank">2025 Gross Income to Net Income Conversion Table</a>  on their website and updates it each year.
+
+2.  **Calculate the Basic Support Obligation**.  Illinois statute requires the calculation of the "Basic Child Support Obligation" which *"reflects the percentage of combined net income that parents living in the same household in this State ordinarily spend on their child".*   <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">See 750 ILCS 5/505(a)(1).</a>  The Illinois Department of Healthcare and Family Services publishes a separate <a href="https://hfs.illinois.gov/content/dam/soi/en/web/hfs/childsupport/parents/2025addendum.pdf" target="_blank">Schedule of Basic Obligations (Appendix B, starts on page 24)</a>  that lists the Basic Child Support Obligation based on the combined net income of the parents.
+
+3. **Calculate Each Parent's Share of the Basic Support Obligation.**  This calculation is done based on the percent of net income attributable to each parent.  The custodial parent (the parent with majority of parenting time) is presumed to spend their share directly on the child or children, and thus is not required to make any payments:
+
+> *Although a monetary obligation is computed for each parent as child support, the receiving parent's share is not payable to the other parent and is presumed to be spent directly on the child.* <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">See 750 ILCS 5/505(a)(1.5).</a>
+
+As a practical matter, due to the inherent complexity, most Attorneys and Courts use specialized software to make these calculations.  The Illinois Department of Healthcare and Family Services provides a publically accessible <a href="https://cscwebext.hfs.illinois.gov/CscWebEx/app/estimator?execution=e1s1" target="_blank">Illinois Child Support Estimator</a> for this purpose but it is almost always a good idea to consult with an attorney because these tools can be used incorrectly cause costly mistakes.
+
+
+## How Long are Child Support Payments Required in Illinois?
+Child Support) to make payments until the child turns 18 or graduates high school (if this is after they turn 18) or 19:
+> *The termination date shall be no earlier than the date on which the child covered by the order will attain the age of 18. However, if the child will not graduate from high school until after attaining the age of 18, then the termination date shall be no earlier than the earlier of the date on which the child's high school graduation will occur or the date on which the child will attain the age of 19.*  <a href="https://www.ilga.gov/legislation/ilcs/documents/075000050k505.htm" target="_blank">See 750 ILCS 5/505(g)</a>.
+
+Thus as a general rule, obligations cease when the child turns 18 or graduates high school.  Parents are usually not required to support the child after this point and are generally not required to contribut to ongoing living expenses or educational/college expenses.  This may not always be the case, however.  If the parents signed a valid agreement or if the child has special needs requiring care beyond when they turn 18, the parents may be obligated to continue providing financial support.  
+
+You should consult with an attorney if you have questions regarding child support obligations in Illinois.
+
+
+
+
+
+
+
+
+

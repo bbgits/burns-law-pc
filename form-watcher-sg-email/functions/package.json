@@ -2,9 +2,8 @@
   "name": "form-watcher-sg-email",
   "version": "1.0.0",
   "main": "index.js",
-  "type:": "module",
   "engines": {
-    "node": "20"
+    "node": "22"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",

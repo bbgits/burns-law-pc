@@ -5,7 +5,7 @@
 import AboutCoverSection from "../../components/About/AboutCoverSection";
 import Skills from "../../components/About/Skills";
 import React, { useState, useEffect } from "react";
-import FormMain from "../../components/About/FormMain";
+import AboutForm from "../../components/forms/about-form";
 
 export default function About() {
   const [isClient, setIsClient] = useState(false);
@@ -18,7 +18,7 @@ export default function About() {
   return (
     <>
       <AboutCoverSection />
-      <FormMain />
+      <AboutForm />
       <Skills />
       <h2 className="font-bold text-3xl xs:text-4xl sxl:text-5xl text-center lg:text-left mt-4 text-dark dark:text-light">
         Affordable Pricing Options

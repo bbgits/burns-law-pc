@@ -1,11 +1,16 @@
+// src\app\components\Header\index.js
 "use client"
 import Link from "next/link";
-import Logo from "./Logo";
+import Image from 'next/image';
+
+
 import { GithubIcon, LinkedinIcon, MoonIcon, SunIcon, TwitterIcon } from "../icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
+import logoImg from '@/public/BLPC-logo-short-bw.png';
+import darkLogoImg from '@/public/BLPC-logo-short-ws.png';
 
 const Header = () => {
 
@@ -17,7 +22,17 @@ const toggle = () =>{
 }
   return (
     <header className="w-full p-4  px-5 md:px-10 flex items-center justify-between">
-        <Logo />
+        {/* <Logo /> */}
+        <Link href="/" className="flex items-center text-dark">
+      <div className="w-30 h-12 flex items-center justify-center">
+        {/* Dynamically switch logo based on the mode prop */}
+        <Image
+          src={mode === 'dark' ? darkLogoImg : logoImg}
+          alt="blog logo"
+          className="object-contain h-full w-full"
+        />
+      </div>
+    </Link>
 
        {/* hamburger menu, only visible up to md (768 px) */}
 
@@ -53,33 +68,7 @@ const toggle = () =>{
   </div>
 </button>
 
-
-
-
-        {/* <button className=" bg-blue-500 fixed top-10 right-4 md:hidden z-50 mr-6" onClick={toggle} aria-label="Hamburger Menu" style={{background:"black"}}>
-          <div className="bg-blue-500 w-6 cursor-pointer transition-all ease duration-300">
-            <div className="bg-blue-500 relative">
-            <span className="absolute top-0 inline-block w-full h-0.5 bg-accent dark:bg-light rounded transition-all ease duration-200" 
-            style={{
-             transform: click ? "rotate(-45deg) translateY(0)" : "rotate(0deg) translateY(6px)"
-            }}
-            
-            >&nbsp;</span>
-            <span className="absolute top-0 inline-block w-full h-0.5 bg-accent dark:bg-light rounded transition-all ease duration-200"
-            style={{
-              opacity: click ? 0 : 1
-             }}
-            >&nbsp;</span>
-            <span className="absolute top-0 inline-block w-full h-0.5 bg-accent dark:bg-light rounded transition-all ease duration-200"
-            style={{
-              transform: click ? "rotate(45deg) translateY(0)" : "rotate(0deg) translateY(-6px)"
-             }}
-            >&nbsp;</span>
-            </div>
-
-          </div>
-        </button> */}
-        </div>
+</div>
 
 
 {/* visible when hamburger clicked on small screen */}
@@ -94,7 +83,7 @@ const toggle = () =>{
         >
             <Link href="/" className="mr-2">Home</Link>
             <Link href="/about" className="mr-2">About</Link>
-            <Link href="/categories/all" className="mr-1 xxs:mr-2">Blog</Link>
+            <Link href="/categories/all" className="mr-1 xxs:mr-2">Articles</Link>
             {/* <Link href="/contact" className="mr-1 xxs:mr-2">Contact</Link> */}
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-accent text-light" :
@@ -112,7 +101,7 @@ const toggle = () =>{
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 ">
             <Link href="/" className="mr-2 text-accent hover:text-accentDark dark:text-black dark:hover:text-accent">Home</Link>
             <Link href="/about" className="mr-2 text-accent dark:text-black">About</Link>
-            <Link href="/categories/all" className="mr-2 text-accent dark:text-black">Blog</Link>
+            <Link href="/categories/all" className="mr-2 text-accent dark:text-black">Articles</Link>
             {/* <Link href="/contact" className="mx-2 text-accent dark:text-black">Contact</Link> */}
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2  flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-accent dark:bg-black text-light" :

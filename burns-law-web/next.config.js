@@ -1,15 +1,19 @@
-/** @type {import('next').NextConfig} */
+// ~/next.config.js
 
-const {withContentlayer} = require("next-contentlayer")
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
+const { withContentlayer } = require('next-contentlayer');
 
-const nextConfig = {
-    output: 'export',
-    compiler:{
-        removeConsole: true,
-    },
-    images: {
-        unoptimized:true
-    }
+module.exports = (phase) => {
+    const isDevServer = phase === PHASE_DEVELOPMENT_SERVER;
+
+    return withContentlayer({
+        output: 'export',
+        distDir: isDevServer ? '.next-dev' : '.next',
+        compiler: {
+            removeConsole: true,
+        },
+        images: {
+            unoptimized: true,
+        },
+    });
 };
-
-module.exports = withContentlayer({ ...nextConfig });

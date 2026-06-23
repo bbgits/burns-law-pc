@@ -1,21 +1,74 @@
-# Function to Send Welcome Email
-Deploy:
-1. `cd tt_func_sg_welcome_email/functions`
-2. `firebase deploy --only functions:sg-welcome`
+# Function Deploy Guide
 
-## VIP Notes...
-- Maximum size (message body, headers, and attachments) is 30 MB
-- Recommended Max Attachment Size = 10 MB
+## Quick Deploy Steps for PowerShell
 
-## Origin Story (how I made this)
-1. Make directory `tt_func_sg_welcome`
-2. Navigate to directory `cd tt_func_sg_welcome`
-3. Initialize Firebase `firebase init functions`
-4. (follow prompts to complete functions setup)
-5. Navigate to functions directory `cd functions`
-6. Install sendgrid `npm install @sendgrid/mail --save`
-7. Install dotenv `npm install dotenv`
-8. SendGrid Website: Create Acccount, Authorize Domain, Get Web API Key
-9. Create a .env file and save the API key to that file `SG_API_KEY=your_api_key_here`
-10. Create function in index.js
-11. Deploy with `firebase deploy --only functions`
+Run these commands from the workspace root after `cd form-watcher-sg-email`.
+
+1. Install dependencies for the functions code:
+```bash
+cd functions
+npm install
+cd ..
+```
+
+2. Set or rotate the SendGrid secret:
+```bash
+firebase functions:secrets:set SG_API_KEY
+```
+
+3. Deploy both backend functions using the PowerShell-safe command:
+```bash
+firebase deploy --only "functions:sendWelcomeEmail,functions:sendGroceryFormEmail"
+```
+
+4. Verify that both functions are deployed:
+```bash
+firebase functions:list
+```
+
+## Why the old command fails
+
+This command is unreliable in PowerShell for this project:
+```bash
+firebase deploy --only functions:sendWelcomeEmail,functions:sendGroceryFormEmail
+```
+
+In this workspace, Firebase CLI accepts the combined filter when the entire `--only` value is wrapped in quotes, but the unquoted comma-separated version returns:
+```text
+Error: No function matches given --only filters. Aborting deployment.
+```
+
+Use the quoted version whenever you want to deploy both functions together.
+
+## Safe fallback
+
+If the targeted deploy ever behaves strangely again, deploy the whole functions codebase instead:
+```bash
+firebase deploy --only functions
+```
+
+Firebase will create new functions automatically from your exports. You do not need to create them manually in the Firebase website UI.
+
+## Function names in this project
+
+- `sendWelcomeEmail`: handles submissions from `form/{docId}`
+- `sendGroceryFormEmail`: handles submissions from `groceryForm/{docId}`
+
+## Deploy one function only
+
+These single-function deploy commands were verified to work:
+```bash
+firebase deploy --only functions:sendWelcomeEmail
+firebase deploy --only functions:sendGroceryFormEmail
+```
+
+## Local fallback option (.env)
+
+Create `form-watcher-sg-email/functions/.env`:
+
+```env
+LOCAL_SG_API_KEY=SG.your_real_sendgrid_key_here
+```
+
+Use `LOCAL_SG_API_KEY` for local testing only. Production should use the `SG_API_KEY` secret.
+

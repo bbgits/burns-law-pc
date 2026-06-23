@@ -9,7 +9,7 @@ const RecentPosts = ({ blogs }) => {
     <section className="w-full mt-8 md:mt-16 px-4 lg:px-32 flex flex-col items-center justify-center">
       <div className="w-full flex justify-between">
         <h2 className="inline-block font-bold capitalize text-3xl lg:text-4xl mb-2 dark:text-light">Recent Posts</h2>
-        <Link href="/categories/all" className="inline-block font-medium text-accent underline underline-offset-2 text-sm lg:text-lg">view all</Link>
+        <Link href="/categories/all" className="inline-block font-medium text-accent dark:text-green-300 underline underline-offset-2 text-sm lg:text-lg">view all</Link>
       </div>
       <div className="grid grid-cols-3 gap-x-2 gap-y-12 sm:gap-x-4 md:gap-8 lg:gap-16 mt-6">
         {

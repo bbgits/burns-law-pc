@@ -5,6 +5,10 @@ const SkillList = [
     "orders of protection",
     "parenting time",
     "high net worth divorce",
+  "consumer protection",
+  "insurance disputes",
+  "negligence",
+  "estate planning",
       ];
   
   const Skills = () => {

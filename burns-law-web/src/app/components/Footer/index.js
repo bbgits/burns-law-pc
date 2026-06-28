@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import React, { useState } from 'react';
 // import { useForm } from 'react-hook-form';
 // import { getFirestore, collection, doc, serverTimestamp, addDoc, setDoc } from 'firebase/firestore';
@@ -51,6 +52,13 @@ const Footer = () => {
         <p className="font-small text-center text-lg sm:text-lg lg:text-lg px-4">
           ph:  (773) 236-2002
         </p>
+        <nav className="mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 px-4 text-base">
+          <Link href="/" className="hover:text-gray-300 transition-colors duration-200">Home</Link>
+          <Link href="/about" className="hover:text-gray-300 transition-colors duration-200">About</Link>
+          <Link href="/practice-areas" className="hover:text-gray-300 transition-colors duration-200">Practice Areas</Link>
+          <Link href="/categories/all" className="hover:text-gray-300 transition-colors duration-200">Blog</Link>
+          <Link href="/contact" className="hover:text-gray-300 transition-colors duration-200">Contact</Link>
+        </nav>
         
         <p className="mt-2 mb-2 lg:mt-2 font-medium text-center text-">
           DISCLAIMERS: NO LAWYER-CLIENT RELATIONSHIP IS CREATED BY SENDING ME AN EMAIL. I AM NOT YOUR LAWYER UNLESS YOU HAVE SIGNED A RETAINER AGREEMENT.  BRIAN BURNS IS LICENSED TO PRACTICE LAW IN ILLINOIS AND MAINTAINS REQUIRED INSURANCE. ALL LEGAL SERVICES PROVIDED INDIVIDUALLY BY BRIAN BURNS (AND NOT BY BURNS LAW P.C.) UNLESS OTHERWISE AGREED. ALL ARTICLES AND CONTENT PROVIDE GENERAL INFORMATION ONLY AND SHOULD NOT BE CONSTRUED AS LEGAL ADVICE OR AS A SUBSTITUTE FOR LEGAL ADVICE.

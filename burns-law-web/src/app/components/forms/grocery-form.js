@@ -132,7 +132,7 @@ const GroceryForm = () => {
     <>
       {submitStatus === "success" ? (
         <p className="text-green-700 dark:text-green-400 text-lg font-semibold">
-          Thank you. Your report was submitted successfully.
+          Thank you. Your report was submitted. Please check your email for next steps and we will contact you shortly.
         </p>
       ) : (
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">

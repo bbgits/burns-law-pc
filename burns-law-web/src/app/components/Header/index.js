@@ -9,6 +9,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
+import { practiceAreaMenuItems } from "@/src/app/practice-areas/practiceAreas";
 import logoImg from '@/public/BLPC-logo-short-bw.png';
 import darkLogoImg from '@/public/BLPC-logo-short-ws.png';
 
@@ -20,6 +21,23 @@ const Header = () => {
 const toggle = () =>{
   setClick(!click)
 }
+
+  const practiceAreaDropdown = (
+    <div className="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
+      <div className="min-w-[15rem] rounded-2xl border border-solid border-accent/20 bg-light/95 dark:bg-dark/95 backdrop-blur-sm shadow-lg p-3">
+        {practiceAreaMenuItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="block rounded-lg px-3 py-2 text-sm text-accent hover:bg-accent/10 dark:text-light dark:hover:bg-light/10"
+          >
+            {item.label}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <header className="w-full p-4  px-5 md:px-10 flex items-center justify-between">
         {/* <Logo /> */}
@@ -83,8 +101,8 @@ const toggle = () =>{
         >
             <Link href="/" className="mr-2">Home</Link>
             <Link href="/about" className="mr-2">About</Link>
-            <Link href="/categories/all" className="mr-1 xxs:mr-2">Articles</Link>
-            {/* <Link href="/contact" className="mr-1 xxs:mr-2">Contact</Link> */}
+          <Link href="/practice-areas" className="mr-2">Practice Areas</Link>
+            <Link href="/categories/all" className="mr-2">Blog</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-accent text-light" :
             "bg-light text-dark" )}
@@ -99,12 +117,20 @@ const toggle = () =>{
 {/* primary nav menu, hidden on small screens */}
         <nav className=" w-max py-3 px-8 border border-solid border-accent dark:border-none rounded-full font-medium capitalize  items-center hidden md:flex
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 ">
-            <Link href="/" className="mr-2 text-accent hover:text-accentDark dark:text-black dark:hover:text-accent">Home</Link>
-            <Link href="/about" className="mr-2 text-accent dark:text-black">About</Link>
-            <Link href="/categories/all" className="mr-2 text-accent dark:text-black">Articles</Link>
-            {/* <Link href="/contact" className="mx-2 text-accent dark:text-black">Contact</Link> */}
+            <Link href="/" className="px-4 text-accent hover:text-accentDark dark:text-black dark:hover:text-accent">Home</Link>
+            <span className="text-gray-300 select-none">|</span>
+            <Link href="/about" className="px-4 text-accent dark:text-black">About</Link>
+            <span className="text-gray-300 select-none">|</span>
+            <div className="relative group px-4">
+              <Link href="/practice-areas" className="text-accent dark:text-black">
+                Practice Areas
+              </Link>
+              {practiceAreaDropdown}
+            </div>
+            <span className="text-gray-300 select-none">|</span>
+            <Link href="/categories/all" className="px-4 text-accent dark:text-black">Blog</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
-            className={cx("w-6 h-6 ease ml-2  flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-accent dark:bg-black text-light" :
+            className={cx("w-6 h-6 ease ml-4  flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-accent dark:bg-black text-light" :
             "bg-light text-accent dark:text-black" )}
             aria-label="theme-switcher"
             >

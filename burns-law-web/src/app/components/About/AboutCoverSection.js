@@ -21,18 +21,16 @@ const AboutCoverSection = () => {
 
       <div className="w-full md:w-1/2 flex flex-col text-left items-start justify-center px-5 xs:p-10 pb-10 lg:px-16 py-4">
         <h2 className="font-bold capitalize text-4xl text-center lg:text-left mt-4">
-          About Brian Burns
+          About Brian
         </h2>
         <p className="font-medium  mt-4 text-sm lg:text-base text-justify">
-          After graduating <i>cum laude</i> from the  Cecil C.
-          Humphries School of Law in 2016, Brian worked for the Federal government, a global legal consulting firm, and a Chicago tech startup before 
-          focusing his legal career exclussively on Family Law. He practices in Cook County, DuPage County, Lake County, McHenry County, Will County, Kendall County, and Kane County.
+          Brian has 10 years of legal experience across government, technology, small businesses, and family law litigation. Burns Law PC is a boutique law firm that provides legal services to individuals and small businesses in Chicago and the surrounding counties.
         </p>
-        <p className="font-medium  mt-4 text-sm lg:text-base text-justify">
+        {/* <p className="font-medium  mt-4 text-sm lg:text-base text-justify">
           Brian created Burns Law P.C. in 2024 to provide top tier service to
           clients at an affordable price.
           If you are going through a divorce or difficult family situation, please reach out - Burns Law P.C. is currently accepting new clients!
-        </p>
+        </p> */}
         <p className="font-medium  mt-4 text-sm lg:text-base">-Brian Burns</p>
         <p className="font-medium text-sm lg:text-base">ph: (773)236-2002</p>
         <p className="font-medium text-sm lg:text-base">@: brian@burnslawpc.com</p>

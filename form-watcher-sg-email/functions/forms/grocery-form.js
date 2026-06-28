@@ -69,11 +69,13 @@ const sendGroceryFormEmail = onDocumentCreated(
 
     const prospectConfirmation = {
       to: email,
-      from: "brian@burnslawpc.com",
+      cc: "brian@burnslawpc.com",
+      from: "welcome@burnslawpc.com",
       subject: "We received your grocery pricing report - Burns Law P.C.",
       text:
         "Hello,\n\n" +
         "Thank you for contacting Burns Law P.C. We received your grocery pricing report and will review it promptly.\n\n" +
+        "We typically do client intake phone calls between 2pm and 6pm on weekdays. Please 'reply all' to this email with a few times that work for you within this time. If these times do not work, please let us know a few times that work for you. Thank you!\n\n" +
         "Below is a copy of your submission:\n\n" +
         `${prospectDetailBlock}\n` +
         "If this is an emergency, dial 911 immediately.\n\n" +

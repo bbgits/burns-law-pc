@@ -62,7 +62,7 @@ const AboutForm = () => {
     <section className="w-full flex flex-col p-5 xs:p-10 sm:p-12 md:p-16 lg:p-20 border-b-2 border-solid border-dark dark:border-light text-dark dark:text-light">
       {submitStatus === "success" ? (
         <p className="text-green-600 text-lg font-bold">
-          Successfully submitted! We will be in touch soon.
+          Successfully submitted! Please check your email for next steps!
         </p>
       ) : (
         <>

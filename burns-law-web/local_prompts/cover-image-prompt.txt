@@ -8,8 +8,8 @@ STYLE: old-school comic book style with elegant gradients; modern, clean style w
 COLORS:
 To fit the design scheme, 
 -the background and all edges must be white or light cream/sepia. 
--Primary color / gradient = dark teal / RGB(46,80,76) to black
--Secondary color / gradient = white / light cream
+-Primary colors:  gradient = dark teal / RGB(46,80,76) to black
+-Secondary colors: gradient = darkred/red to light cream/sepia
 -Background color = white / very faded sepia or texture
 
 SUBJECT:

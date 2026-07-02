@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/navigation";
 import { Timestamp, collection, addDoc } from "firebase/firestore";
 import { db } from "../../../../firebaseConfig";
 
@@ -10,6 +11,7 @@ const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"), {
 });
 
 const AboutForm = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     firstName: "",
     phoneNumber: "",
@@ -49,6 +51,7 @@ const AboutForm = () => {
         });
 
         setSubmitStatus("success");
+        router.push("/success/about-form");
       } catch (error) {
         console.error("Error adding document to Firestore:", error);
         setSubmitStatus("error");
@@ -96,7 +99,7 @@ const AboutForm = () => {
                   className="block text-gray-700 text-md font-bold mb-2 dark:text-black"
                   htmlFor="phoneNumber"
                 >
-                  Phone Number (optional)
+                  Phone (optional)
                 </label>
                 <input
                   type="tel"

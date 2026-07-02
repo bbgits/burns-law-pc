@@ -1,7 +1,9 @@
-# SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS 
-This personal blog / website is shared freely in hopes that it empowers non-technical professionals to build their brand and expand their skillset.  It was also a personal pain point for me, as someone who enjoys writing blog posts (and code!), but feels frustrated with current self-publishing options.
+# Quick Deploy Updates for Frontend
+`cd burns-law-web`
+`npm run build`
+`firebase deploy --only hosting`
 
-By leveraging the rich functionality of the new .mdx document standards and modern hosting and deployment solutions, every journalist can now can be both their own CTO and Editor in Chief!
+
 ## Git, Firebase Config, Etc.
 - Git Repo: `bbgits/burns-law-pc`
 

@@ -102,7 +102,7 @@ const toggle = () =>{
             <Link href="/" className="mr-2">Home</Link>
             <Link href="/about" className="mr-2">About</Link>
           <Link href="/practice-areas" className="mr-2">Practice Areas</Link>
-            <Link href="/categories/all" className="mr-2">Blog</Link>
+            <Link href="/blog/all" className="mr-2">Blog</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-accent text-light" :
             "bg-light text-dark" )}
@@ -128,7 +128,7 @@ const toggle = () =>{
               {practiceAreaDropdown}
             </div>
             <span className="text-gray-300 select-none">|</span>
-            <Link href="/categories/all" className="px-4 text-accent dark:text-black">Blog</Link>
+            <Link href="/blog/all" className="px-4 text-accent dark:text-black">Blog</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-4  flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-accent dark:bg-black text-light" :
             "bg-light text-accent dark:text-black" )}

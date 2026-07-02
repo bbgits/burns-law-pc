@@ -4,7 +4,7 @@ import InsightRoll from "../components/About/InsightRoll";
 
 
 const insights = [
-    "Licensed Since 2016",
+    "10 Years of Experience",
     "Family Law",
     "Modern Practice",
     "Transparent Pricing",

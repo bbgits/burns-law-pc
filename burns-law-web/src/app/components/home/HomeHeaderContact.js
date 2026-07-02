@@ -9,10 +9,10 @@ const HomeHeaderContact = () => {
     <section className="w-full mt-6 md:mt-10 px-4 lg:px-32">
       <div className="w-full p-6 sm:p-8 md:p-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark dark:text-light">
-          Practical Counsel for Real-World Legal Problems
+          Need a Lawyer? Let's Talk.
         </h1>
         <p className="mt-4 text-lg sm:text-2xl max-w-4xl text-dark/90 dark:text-light/90 leading-relaxed">
-          Burns Law P.C. advises clients on family, consumer, civil, and planning
+          Burns Law P.C. advises clients on family, consumer, civil, and estate planning
           matters with a practical focus on clear options, efficient strategy,
           and responsive communication.
         </p>

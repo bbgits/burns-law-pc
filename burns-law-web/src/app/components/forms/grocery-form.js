@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/navigation";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { db } from "../../../../firebaseConfig";
 
@@ -25,6 +26,7 @@ function getReadableSubmitError(error) {
 }
 
 const GroceryForm = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -111,6 +113,7 @@ const GroceryForm = () => {
       });
       setCaptchaVerified(false);
       setSubmitStatus("success");
+      router.push("/success/grocery-form");
     } catch (error) {
       const readableError = getReadableSubmitError(error);
 
@@ -170,7 +173,7 @@ const GroceryForm = () => {
 
           <div className="md:col-span-1">
             <label className="block mb-2 font-semibold" htmlFor="phoneNumber">
-              Phone Number (optional)
+              Phone (optional)
             </label>
             <input
               id="phoneNumber"

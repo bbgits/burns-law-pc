@@ -1,3 +1,4 @@
+// ~/src/app/manifest.js
 export default function manifest() {
   return {
     name: "Next.js App",

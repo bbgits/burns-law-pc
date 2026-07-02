@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/navigation";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { db } from "../../../../firebaseConfig";
 
@@ -10,6 +11,7 @@ const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"), {
 });
 
 const HomeForm = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     firstName: "",
     phoneNumber: "",
@@ -47,6 +49,7 @@ const HomeForm = () => {
       setFormData({ firstName: "", phoneNumber: "", email: "", message: "" });
       setCaptchaVerified(false);
       setSubmitStatus("success");
+      router.push("/success/home-form");
     } catch (error) {
       console.error("Error submitting home header form:", error);
       setSubmitStatus("submit-error");

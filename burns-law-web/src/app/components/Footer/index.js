@@ -56,12 +56,12 @@ const Footer = () => {
           <Link href="/" className="hover:text-gray-300 transition-colors duration-200">Home</Link>
           <Link href="/about" className="hover:text-gray-300 transition-colors duration-200">About</Link>
           <Link href="/practice-areas" className="hover:text-gray-300 transition-colors duration-200">Practice Areas</Link>
-          <Link href="/categories/all" className="hover:text-gray-300 transition-colors duration-200">Blog</Link>
+          <Link href="/blog/all" className="hover:text-gray-300 transition-colors duration-200">Blog</Link>
           <Link href="/contact" className="hover:text-gray-300 transition-colors duration-200">Contact</Link>
         </nav>
         
         <p className="mt-2 mb-2 lg:mt-2 font-medium text-center text-">
-          DISCLAIMERS: NO LAWYER-CLIENT RELATIONSHIP IS CREATED BY SENDING ME AN EMAIL. I AM NOT YOUR LAWYER UNLESS YOU HAVE SIGNED A RETAINER AGREEMENT.  BRIAN BURNS IS LICENSED TO PRACTICE LAW IN ILLINOIS AND MAINTAINS REQUIRED INSURANCE. ALL LEGAL SERVICES PROVIDED INDIVIDUALLY BY BRIAN BURNS (AND NOT BY BURNS LAW P.C.) UNLESS OTHERWISE AGREED. ALL ARTICLES AND CONTENT PROVIDE GENERAL INFORMATION ONLY AND SHOULD NOT BE CONSTRUED AS LEGAL ADVICE OR AS A SUBSTITUTE FOR LEGAL ADVICE.
+          DISCLAIMERS: No lawyer-client relationship is created by sending us an email, filling out an online form, or calling. I am not your lawyer unless you have signed a retainer agreement.Brian Burns is licensed to practice law in Illinois and maintains required insurance. All articles and content provide general information only and should not be construed as legal advice or as a substitute for legal advice.
         </p>
 
       {/* ) : (

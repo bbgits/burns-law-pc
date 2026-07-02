@@ -28,7 +28,7 @@ const HomeCoverSection = ({ blogs }) => {
         />
 
         <div className="w-7/8 sm:w-3/4 p-2 xxs:p-4 xs:p-8 sm:p-12 md:p-16 flex flex-col items-start justify-center z-10 text-light">
-          <Tag link={`/categories/${blog.tags[0]}`} name={blog.tags[0]} />
+          <Tag link={`/blog/${blog.tags[0]}`} name={blog.tags[0]} />
           <Link href={blog.url} className="mt-3">
             <h1 className="font-bold capitalize text-2xl sm:text-3xl md:text-4xl">
               <span className="bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500">

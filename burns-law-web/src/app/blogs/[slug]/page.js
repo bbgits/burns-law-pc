@@ -95,7 +95,7 @@ export default function BlogPage({ params }) {
         <div className="w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <Tag
             name={blog.tags[0]}
-            link={`/categories/${slug(blog.tags[0])}`}
+            link={`/blog/${slug(blog.tags[0])}`}
             className="px-6 text-sm py-2"
           />
           <h1
